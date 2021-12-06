@@ -51,8 +51,8 @@ async function start() {
     const candidate = await User.findOne()
     if (!candidate) {
       const user = new User({
-        email: 'vladilen@mail.ru',
-        name: 'Vladilen',
+        email: 'vlad@mail.ru',
+        name: 'Vlad',
         cart: {items: []}
       })
       await user.save()
